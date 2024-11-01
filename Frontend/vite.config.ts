@@ -4,7 +4,6 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -13,7 +12,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@card': fileURLToPath(new URL('./src/componensts/cards', import.meta.url)),
+      '@components': fileURLToPath(new URL('./src/components', import.meta.url)), // Hozzáadva
+      '@card': fileURLToPath(new URL('./src/components/cards', import.meta.url)),
       '@layouts': fileURLToPath(new URL('./src/components/layouts', import.meta.url)),
       '@sections': fileURLToPath(new URL('./src/components/sections', import.meta.url)),
       '@pages': fileURLToPath(new URL('./src/pages', import.meta.url)),

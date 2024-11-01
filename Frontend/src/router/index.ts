@@ -1,22 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import FooldalLayout from '@layouts/FooldalLayout.vue'
 
 const routes = [
   {
     name: 'home',
     path: '/',
-    component: () => import('@layouts/FooldalLayout.vue'),
+    component:FooldalLayout,
     meta: {
       title: 'Főoldal',
     },
-  },
-    {
-    name: 'about',
-    path: '/about',
-    component: () => import('@layouts/HeaderLayout.vue'),
-    meta: {
-      title: 'Rólunk',
-  },
-},
+  }
 ];
 const router = createRouter({
   history: createWebHistory(),

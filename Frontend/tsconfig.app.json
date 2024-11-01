@@ -8,10 +8,14 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
+      "@*": ["./src/*"],
+      "@components/*": ["./src/components/*"], // Hozzáadva
       "@layouts/*": ["./src/components/layouts/*"],
       "@card/*": ["./src/components/cards/*"],
-      "@sections/*": ["./src/components/sections/*"]
+      "@sections/*": ["./src/components/sections/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }

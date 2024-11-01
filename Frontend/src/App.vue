@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import FooldalLayout from '@components/FooldalLayout.vue'
+import FooldalLayout from '@layouts/FooldalLayout.vue';
 </script>
 
 <template>
