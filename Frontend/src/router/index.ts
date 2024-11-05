@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+// import { createRouter, createWebHistory } from 'vue-router/auto-router';
 import FooldalLayout from '@layouts/FooldalLayout.vue'
 
 const routes = [
